@@ -21,3 +21,7 @@ npm install axios
 ## gsap 설치
 
 npm install gsap
+
+## netlify 주소
+
+https://snazzy-panda-4fea89.netlify.app
