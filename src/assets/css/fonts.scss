@@ -80,3 +80,37 @@
 		url("../fonts/Rajdhani-Bold.ttf") format("truetype");
 	display: swap;
 }
+@font-face {
+	font-family: "TTWelcome";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/TTWelcomeRegular.eot");
+	src: url("../fonts/TTWelcomeRegular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/TTWelcomeRegular.woff2") format("woff2"),
+		url("../fonts/TTWelcomeRegular.woff") format("woff"),
+		url("../fonts/TTWelcomeRegular.ttf") format("truetype");
+	display: swap;
+}
+@font-face {
+	font-family: "TTWelcome";
+	font-weight: 700;
+	font-style: normal;
+	src: url("../fonts/TTWelcomeBold.eot");
+	src: url("../fonts/TTWelcomeBold.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/TTWelcomeBold.woff2") format("woff2"),
+		url("../fonts/TTWelcomeBold.woff") format("woff"),
+		url("../fonts/TTWelcomeBold.ttf") format("truetype");
+	display: swap;
+}
+@font-face {
+	font-family: "Cafe24Onepretty";
+	font-weight: normal;
+	font-style: normal;
+	src: url("../fonts/Cafe24Oneprettynight.eot");
+	src: url("../fonts/Cafe24Oneprettynight.eot?#iefix")
+			format("embedded-opentype"),
+		url("../fonts/Cafe24Oneprettynight.woff2") format("woff2"),
+		url("../fonts/Cafe24Oneprettynight.woff") format("woff"),
+		url("../fonts/Cafe24Oneprettynight.ttf") format("truetype");
+	display: swap;
+}
