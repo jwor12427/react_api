@@ -6,18 +6,31 @@ import Header from "../layout/Header";
 import Contents from "../layout/Contents";
 import Footer from "../layout/Footer";
 import Title from "../layout/Title";
-import MoiveCont from "../include/MoiveCont";
+import MovieCont from "../include/MovieCont";
 import Contact from "../layout/Contact";
+import MovieSearch from "../include/MovieSearch";
+import MovieList from "../include/MovieList";
 
 const Movie = () => {
-	const [movies, setMoives] = useState([]);
+	const [movies, setMovies] = useState([]);
+
+	const search = (query) => {
+		fetch(
+			`https://api.themoviedb.org/3/search/movie?api_key=dab7e73d4b52c62b1d206d7f6bd38ec0&query=${query}`
+		)
+			.then((response) => response.json())
+			// .then((result) => console.log(result.results))
+			.then((result) => setMovies(result.results))
+			.catch((error) => console.log("error", error));
+	};
 
 	useEffect(() => {
 		fetch(
-			"https://api.themoviedb.org/3/search/movie?api_key=dab7e73d4b52c62b1d206d7f6bd38ec0&query=marble&page=1"
+			"https://api.themoviedb.org/3/search/movie?api_key=dab7e73d4b52c62b1d206d7f6bd38ec0&query=marvel&page=1"
 		)
 			.then((response) => response.json())
-			.then((result) => setMoives(result))
+			// .then((result) => console.log(result.results))
+			.then((result) => setMovies(result.results))
 			.catch((error) => console.log("error", error));
 	}, []);
 
@@ -26,7 +39,9 @@ const Movie = () => {
 			<Header />
 			<Contents>
 				<Title title={["movie", "referece api"]} />
-				<MoiveCont movies={movies} />
+				<MovieSearch onSearch={search} />
+				<MovieList />
+				<MovieCont movies={movies} />
 				<Contact />
 			</Contents>
 			<Footer />
