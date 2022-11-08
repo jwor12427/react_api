@@ -24,6 +24,7 @@ const MovieCont = (props) => {
 	return (
 		<section className="cont__movie">
 			<div className="container">
+				<h2 className="tit">Movie List</h2>
 				<div className="movie__inner">
 					<ul>
 						{props.movies.map((movies, index) => (

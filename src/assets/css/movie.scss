@@ -5,6 +5,13 @@
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
+
+		.swiper-button-prev,.swiper-button-next {
+			color: #fff !important;
+		}
+		.swiper-pagination-bullet-active {
+			background: #fff !important;
+		}
 	}
 	li {
 		width: 23%;
@@ -35,8 +42,34 @@
 			font-weight: 800;
 		}
 	}
+	.swiper-slide {
+		margin-left: 20px;
+		.card {
+			width: 30%;
+			display: inline;
+			justify-content: center;
+	
+			img {
+				width: 79%;
+			}
+			em {
+				margin-bottom: 0;
+			}
+		}
+
+	}
+	
 	a {
 		color: var(--white);
+	}
+	.swiper-pagination {
+		margin-bottom: 20px;
+	}
+}
+.container {
+	.tit {
+		color: var(--white);
+		margin-bottom: 20px;
 	}
 }
 
