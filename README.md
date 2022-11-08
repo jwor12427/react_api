@@ -22,6 +22,6 @@ npm install axios
 
 npm install gsap
 
-## netlify 주소
+### 리액트 API 사이트1
 
-https://snazzy-panda-4fea89.netlify.app
+https://react-api-site01.netlify.app
