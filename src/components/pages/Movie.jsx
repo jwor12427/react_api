@@ -49,8 +49,8 @@ const Movie = () => {
 			<Header />
 			<Contents>
 				<Title title={["movie", "referece api"]} />
-				<MovieSearch onSearch={search} />
 				<MovieList popularMovie={listMovie} />
+				<MovieSearch onSearch={search} />
 				<MovieCont movies={movies} />
 				<Contact />
 			</Contents>
