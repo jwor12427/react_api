@@ -5,7 +5,7 @@ const YoutubeItem = ({ youtube }) => {
 	return (
 		<li>
 			<a
-				href={`https://www.youtube.com/watch?v=${youtube.videoId}`}
+				href={`https://www.youtube.com/watch?v=${youtube.id.videoId}`}
 				target="blank"
 			>
 				<img
