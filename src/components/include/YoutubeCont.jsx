@@ -4,22 +4,27 @@ import React from "react";
 const YoutubeItem = ({ youtube }) => {
 	return (
 		<li>
-			<a href="https://www.youtube.com/">
+			<a
+				href={`https://www.youtube.com/watch?v=${youtube.videoId}`}
+				target="blank"
+			>
 				<img
 					src={youtube.snippet.thumbnails.medium.url}
-					alt=""
+					alt={youtube.alt}
 				/>
+				<p className="you__title">{youtube.snippet.title}</p>
 			</a>
 		</li>
 	);
 };
-const YoutubeCont = ({ youtube }) => {
+const YoutubeCont = ({ youtubes }) => {
+	console.log(youtubes);
 	return (
-		<section className="cont__unsplash">
+		<section className="youtube__slider">
 			<div className="container">
-				<div className="unsplash__inner">
+				<div className="movie__inner">
 					<ul>
-						{youtube.map((youtube, index) => (
+						{youtubes.map((youtube, index) => (
 							<YoutubeItem
 								key={index}
 								youtube={youtube}

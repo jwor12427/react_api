@@ -1,0 +1,33 @@
+/** @format */
+.youtube__slider {
+	.swiper-wrapper {
+		margin-bottom: 70px;
+		.swiper-slide {
+			.youtube__img {
+				border-radius: 10px;
+			}
+		}
+	}
+	.swiper-pagination {
+		color: var(--white);
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+	li {
+		a {
+			img {
+				border-radius: 5px;
+				margin-bottom: 10px;
+			}
+			.you__title {
+				font-size: 14px;
+				font-family: var(--font-kor1);
+				width: 250px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
