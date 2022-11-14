@@ -10,7 +10,7 @@ const YoutubeItem = ({ youtube }) => {
 			>
 				<img
 					src={youtube.snippet.thumbnails.medium.url}
-					alt={youtube.alt}
+					alt={youtube.etag}
 				/>
 				<p className="you__title">{youtube.snippet.title}</p>
 			</a>

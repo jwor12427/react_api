@@ -9,6 +9,7 @@ import Title from "../layout/Title";
 import YoutubeCont from "../include/YoutubeCont";
 import YoutubeSlider from "../include/YoutubeSlider";
 import YoutubeSearch from "../include/YoutubeSearch";
+import YoutubeBtn from "../include/YoutubeBtn";
 import Contact from "../layout/Contact";
 
 export const Youtube = () => {
@@ -47,6 +48,7 @@ export const Youtube = () => {
 				<Title title={["Youtube", "referce api"]} />
 				<YoutubeSlider random={random} />
 				<YoutubeSearch onSearch={search} />
+				<YoutubeBtn onSearch={search} />
 				<YoutubeCont youtubes={youtubes} />
 				<Contact />
 			</Contents>

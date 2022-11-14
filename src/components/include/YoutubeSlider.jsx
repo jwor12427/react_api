@@ -16,8 +16,11 @@ function YoutubeSliderItem({ random }) {
 			<img
 				className="youtube__img"
 				src={random.snippet.thumbnails.medium.url}
-				alt=""
+				alt={random.etag}
 			/>
+			<em>
+				<span className="youtube__title">{random.snippet.title}</span>
+			</em>
 		</a>
 	);
 }
