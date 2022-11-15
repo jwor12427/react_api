@@ -8,7 +8,7 @@ const AboutCont = () => {
 			<div className="container">
 				<div className="about01">
 					<img
-						src=""
+						src="https://jwor12427.github.io/react_api/src/assets/img/aboutImg01.png"
 						alt="about이미지1"
 						className="about__img"
 					/>
@@ -29,7 +29,7 @@ const AboutCont = () => {
 				</div>
 				<div className="about02">
 					<img
-						src="/"
+						src="https://jwor12427.github.io/react_api/src/assets/img/aboutImg02.jpg"
 						alt="about이미지2"
 						className="about__img"
 					/>
@@ -54,7 +54,7 @@ const AboutCont = () => {
 				</div>
 				<div className="about03">
 					<img
-						src=""
+						src="https://jwor12427.github.io/react_api/src/assets/img/aboutImg03.png"
 						alt="about이미지3"
 						className="about__img"
 					/>
