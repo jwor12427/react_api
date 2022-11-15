@@ -15,10 +15,10 @@ const Referece = () => {
 	const [references, setReferences] = useState([]);
 
 	useEffect(() => {
-		fetch("https://webstoryboy.github.io/react2022/src/assets/json/refer.json")
+		fetch("https://jwor12427.github.io/react_api/src/utils/reference.json")
 			.then((response) => response.json())
 			// .then((result) => console.log(result.data.htmlRefer)) //객체까지 불러올지 배열까지 불러올지 확인
-			.then((result) => setReferences(result.data.htmlRefer))
+			.then((result) => setReferences(result.cssRefer))
 			.catch((error) => console.log("error", error));
 	}, []);
 
